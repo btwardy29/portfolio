@@ -1,0 +1,68 @@
+@import '../../variables.scss';
+
+.wrapper {
+  width: calc(50% - 40px);
+  aspect-ratio: 7/4;
+  border: rgba(60, 68, 88, 0.411) 1px solid;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+
+@mixin commonTape {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  width: 1000px;
+  height: 30px;
+  background: rgb(255,217,0);
+  background: rgb(255,217,0);
+  background: linear-gradient(180deg, rgba(255,217,0,1) 0%, rgba(255,227,63,1) 9%, rgba(255,217,0,1) 17%, rgba(149,128,2,1) 91%, rgba(173,148,0,1) 100%);
+  -webkit-box-shadow: 0px 22px 36px -9px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 22px 36px -9px rgb(0, 0, 0);
+  box-shadow: 0px 22px 36px -9px rgb(0, 0, 0);
+  span {
+    color: black;
+    font-weight: 900;
+    font-size: 30px;
+    opacity: 0.8;
+    white-space: nowrap;
+    letter-spacing: -2px;
+  }
+}
+
+.tape {
+  @include commonTape();
+  transform: rotate(15deg);
+  z-index: 2;
+}
+.tape2 {
+  @include commonTape();
+  transform: rotate(-13deg);
+  z-index:1
+}
+
+.imageBg {
+  width: 60%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  &:hover > .gitHub,&:hover > .website {
+    animation: gitAnimate 0.2s reverse forwards ease-in ;
+  }
+}
+
+
+
+.description {
+  width: 40%;
+  padding: 30px;
+  background: rgb(7,21,65);
+  background: radial-gradient(circle at top right, $secondary-bg 0%, $primary-bg 80%);
+
+
+}
+

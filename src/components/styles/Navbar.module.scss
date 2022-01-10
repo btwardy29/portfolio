@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  span {
+    display: inline-block;
+    padding: 30px 50px;
+    text-align: right;
+  }
+}

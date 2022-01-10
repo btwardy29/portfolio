@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+.flexBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skillsBox {
+  width: 60%;
+  height: auto;
+  background: rgb(7,21,65);
+  background: radial-gradient(circle at top right, $secondary-bg 0%, $primary-bg 80%);
+  margin: 60px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  opacity: 0;
+  width: 40%;
+  height: auto;
+  background: rgb(7,21,65);
+  background: radial-gradient(ellipse at top right, $secondary-bg 0%, $primary-bg 50%);
+  margin: 100px 20px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  .wave {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+  }
+  span {
+    line-height: 30px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  strong {
+    font-size: 16px;
+  }
+}

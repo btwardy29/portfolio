@@ -1,0 +1,117 @@
+@import '../../variables.scss';
+
+.wrapper {
+  
+  width: calc(50% - 40px);
+  aspect-ratio: 7/4;
+  border: rgba(60, 68, 88, 0.411) 1px solid;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.imageBg {
+  width: 60%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  &:hover > .gitHub,&:hover > .website {
+    animation: gitAnimate 0.2s reverse forwards ease-in ;
+  }
+}
+
+
+
+.description {
+  width: 40%;
+  padding: 0px 30px;
+  background: rgb(7,21,65);
+  background: radial-gradient(circle at top right, $secondary-bg 0%, $primary-bg 80%);
+  p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.gitHub {
+  opacity: .92;
+  height:50%;
+  width:120%;
+  background-color: white;
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+  animation: gitAnimateBack 0.2s reverse ease-out;
+  position: relative;
+  div {
+    position: absolute;
+    letter-spacing: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+    p {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    img {
+      width: 27px;
+    }
+  }
+}
+
+.website {
+  opacity: .9;
+  height:50%;
+  width:120%;
+  transform-origin: top left;
+  background: linear-gradient(180deg, rgb(255, 106, 106) 0%, rgb(255, 228, 108) 100%);
+  transform: rotate(90deg);
+  animation: gitAnimateBack 0.2s reverse ease-out;
+  position: relative;
+  div {
+    position: absolute;
+    letter-spacing: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    text-align: center;
+    p {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    img {
+      width: 27px;
+      filter: invert(100%);
+    }
+  }
+
+}
+
+@keyframes gitAnimate{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+
+@keyframes gitAnimateBack{
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  flex: 45%;
+  animation: scaleDown .3s ease-out forwards;
+  &:hover > div > img {
+    animation: logoGray .3s ease-out forwards;
+  }
+  &:hover {
+    animation: scaleUp .1s ease-out forwards;
+  }
+  
+  .description {
+    padding-left: 20px;
+    font-size: 19px;
+    opacity: 0.5
+  }
+  img {
+    width: auto;
+    height: 30px;
+    padding-left: 30px;
+    animation: logoColor 3s ease-out forwards;
+  }
+}
+
+.circleBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 13px;
+
+  }
+  span {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+  }
+}
+
+@keyframes logoGray {
+  from {
+    filter: grayscale(1);
+  }
+  to {
+    filter: grayscale(0);
+  }
+}
+
+@keyframes logoColor {
+  from {
+    filter: grayscale(0);
+  }
+  to {
+    filter: grayscale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(.85);
+  }
+  to {
+    transform: scale(.9);
+  }  
+}
+@keyframes scaleDown {
+  from {
+    transform: scale(.9);
+  }
+  to {
+    transform: scale(.85);
+  }  
+}

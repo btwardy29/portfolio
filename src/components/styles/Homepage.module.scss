@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+.container {
+
+  
+  h3 {
+    font-size: 18px;
+    font-family: $secondary-font;
+    font-weight: 200;
+    margin: 0;
+  }
+}
+
+.headerWrapper {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  span {
+    font-family: 'Zeyada', cursive;    
+    font-size: 34px;
+    opacity: 0.7;
+  }
+}
+.blankSpace {
+  padding: 120px;
+
+}

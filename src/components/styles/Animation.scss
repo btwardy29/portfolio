@@ -1,0 +1,141 @@
+.container {
+  top: -350px;
+  left: -500px;
+  position: absolute;
+  width: 2000px;
+  height: 1350px;
+  overflow: hidden;
+  transform: scale(0.5);
+  z-index: -1;
+}
+.containerWrapper {
+width: 100%;
+height: 100%;
+position: relative;
+
+
+
+}
+.mask {
+  mask:url("../../assets/mask.png");
+  -webkit-mask:url("../../assets/mask.png");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  width:100%;
+  height: 150%;
+}
+
+.cloudFront, .cloudMiddle, .cloudBack, .stars, .hill, .glow, .human, .moon, .glow, .stars2 {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+}
+
+.glow {
+  z-index: 1;
+  transform: translate(-50%, 2%);
+}
+
+.human {
+  z-index: 11;
+  transform: translate(-50%, 55%);
+}
+.moon {
+  z-index: 9;
+  transform: translate(-50%, 00%);
+}
+.visible {
+  // animation: moonDown 2s ease-in 0 1 normal forwards;
+  animation-name: moonDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.invisible {
+  // animation: moonDown 2s ease-in 0 1 normal forwards;
+  animation-name: moonUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.stars {
+  z-index: 4;
+  opacity: 0.5;
+  mix-blend-mode: overlay ;
+  animation: starsAnimate 15s ease-in-out infinite alternate none;
+}
+.stars2 {
+  z-index: 4;
+  opacity: 1;
+  mix-blend-mode: overlay ;
+  animation: starsAnimate2 9s ease-in-out infinite alternate-reverse none;
+
+}
+
+.hill {
+  z-index: 10;
+  transform: translate(-50%, 80%);
+}
+
+.cloudFront {
+  z-index: 3;
+  animation: cloudAnimate 50s ease-in-out infinite alternate-reverse none;
+
+}
+.cloudMiddle {
+  z-index: 2;
+  animation: cloudAnimate 60s ease-in-out infinite alternate-reverse none;
+}
+.cloudBack{
+  z-index: 1;
+  animation: cloudAnimate 45s ease-in-out infinite alternate none;
+}
+
+@keyframes cloudAnimate {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(-60%);
+
+  }
+}
+
+@keyframes starsAnimate {
+  from {
+    transform: translate(-50%, -35%) rotate(0)
+  }
+  to {
+    transform: translate(-45%, -40%) rotate(3deg)
+
+  }
+}
+@keyframes starsAnimate2 {
+  from {
+    transform: translate(-55%, -00%) rotate(0) scale(-1)
+  }
+  to {
+    transform: translate(-50%, -5%) rotate(1deg) scale(-1)
+
+  }
+}
+
+@keyframes moonDown {
+  from {
+    transform: translate(-50%, 00%)
+  }
+  to {
+    transform: translate(-50%, 150%)
+  }
+}
+
+@keyframes moonUp {
+  from {
+    transform: translate(-50%, 150%)
+  }
+  to {
+    transform: translate(-50%, 00%)
+  }
+}

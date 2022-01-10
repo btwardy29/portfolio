@@ -1,0 +1,97 @@
+.javaScript {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 75;
+    animation: JSAnimate 2s cubic-bezier(.08,.89,.56,.99)
+  }
+}
+
+@keyframes JSAnimate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 75;
+  }
+}
+
+.Vue {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 122;
+    animation: VueAnimate 1.2s cubic-bezier(.08,.89,.56,.99);
+  }
+}
+
+@keyframes VueAnimate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 122;
+  }
+}
+.CSS {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 37;
+    animation: CSSAnimate 2.6s cubic-bezier(.08,.89,.56,.99)
+  }
+}
+
+@keyframes CSSAnimate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 37;
+  }
+}
+.react {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 88;
+    animation: ReactAnimate 1.6s cubic-bezier(.08,.89,.56,.99)
+  }
+}
+
+@keyframes ReactAnimate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 88;
+  }
+}
+.firebase {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 88;
+    animation: FirebaseAnimate 1.6s cubic-bezier(.08,.89,.56,.99)
+  }
+}
+
+@keyframes FirebaseAnimate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 88;
+  }
+}
+.web3 {
+  circle {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 210;
+    animation: Web3Animate 0.5s cubic-bezier(.08,.89,.56,.99)
+  }
+}
+
+@keyframes Web3Animate {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 210;
+  }
+}
