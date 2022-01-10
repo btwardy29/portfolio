@@ -1,7 +1,6 @@
 @import '../../variables.scss';
 
 .wrapper {
-  
   width: calc(50% - 40px);
   aspect-ratio: 7/4;
   border: rgba(60, 68, 88, 0.411) 1px solid;
@@ -32,6 +31,22 @@
   p {
     font-size: 12px;
     line-height: 14px;
+  }
+  h5 {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  h4 {
+    padding: 20px 0 0px 0;
+    margin: 0;
+  }
+  ul {
+    padding: 0 0 0 30px;
+    margin: 0;
+    font-size: 12px;
   }
 }
 
@@ -95,6 +110,12 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 100%;
+  }
 }
 
 @keyframes gitAnimate{

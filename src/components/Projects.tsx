@@ -9,7 +9,7 @@ const Projects = () => {
       technologies: ['Vue', 'Firebase', 'CSS/Sass'],
       linkGithub: 'https://github.com/btwardy29/tastygram',
       linkWebsite: 'https://tastygram.vercel.app/',
-      description: 'This is a simple web page that looks like a cook book. User can create account and add their own recipes. I\'ve also implemented comments and rating system based on Firebase.'
+      description: 'This is a simple web page that looks like a cook book. User can create account and add their own recipes. Comments and rating system implemented.'
     },
     { name: 'Personal Trainer Manager',
       short: 'ptm',

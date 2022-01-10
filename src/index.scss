@@ -62,3 +62,35 @@ code {
     transform: translateX(0px);
   }
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0 6vw;
+    .gradientText {
+      font-size: 45px;
+      line-height: 60px;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 4vw;
+    .gradientText {
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0 3vw;
+    .gradientText {
+      font-size: 25px;
+      line-height: 45px;
+    }
+  }
+}

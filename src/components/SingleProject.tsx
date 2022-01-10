@@ -34,10 +34,10 @@ const SingleProject = ({ project }: { project: ProjectDetails }) => {
         </div>
       </div>
       <div className={styles.description}>
-        <h2>
+        <h4>
           { project.name }
-        </h2>
-        <h3>Technologies used:</h3>
+        </h4>
+        <h5>Technologies used:</h5>
         <ul>
           {project.technologies.map(tech => {
             return <li key={tech}>{tech}</li>

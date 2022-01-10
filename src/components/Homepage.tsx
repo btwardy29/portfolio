@@ -5,7 +5,7 @@ const Homepage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.headerWrapper}>
-        <span>Bartosz Twardy </span>
+        <span>Bartosz Twardyy </span>
         <h1 className="gradientText">Front-end developer </h1>
         <h1 className="gradientText">& web designer</h1>
       </div>

@@ -56,8 +56,6 @@
   }
   .facebook, .facebookDiv {
     left: 35%;
-
-
   }
   .instagram, .instagramDiv {
     left: 45%;
@@ -142,6 +140,21 @@
         font-style: italic;
       }
     }
+}
+
+@media screen and (max-width: 600px) {
+  .facebook, .facebookDiv {
+    left: 20% !important;
+  }
+  .instagram, .instagramDiv {
+    left: 40% !important;;
+  }
+  .github, .githubDiv {
+    left: 60% !important;;
+  }
+  .email, .emailDiv {
+    left: 80% !important;;
+  }
 }
 
 @keyframes PopWindow {

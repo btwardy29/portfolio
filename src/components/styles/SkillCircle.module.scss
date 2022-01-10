@@ -1,8 +1,9 @@
 .container {
   display: flex;
   align-items: center;
-  padding: 5px;
-  flex: 45%;
+  padding: 0px;
+  flex: 40%;
+  width: 50%;
   animation: scaleDown .3s ease-out forwards;
   &:hover > div > img {
     animation: logoGray .3s ease-out forwards;
@@ -19,7 +20,7 @@
   img {
     width: auto;
     height: 30px;
-    padding-left: 30px;
+    padding-left: 20px;
     animation: logoColor 3s ease-out forwards;
   }
 }
@@ -31,6 +32,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 
 
   circle {
@@ -47,6 +50,12 @@
     position: absolute;
     text-align: center;
     line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex: 100%;
   }
 }
 

@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
+  transform: scale(0.4);
 }
 
 .flexContainer {
@@ -22,6 +23,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 
 .description {
   opacity: 0;
@@ -48,3 +50,27 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .flexContainer {
+    display: block;
+  }
+  .skillsBox {
+    width: 100%;
+  }
+  .description {
+    line-height: 5px;
+    width: 100%;
+    background: none;
+    margin: 0;
+    margin-right: 30px;
+    text-align: center;
+    padding: 0px 10px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  strong{
+    line-height: 10px !important;
+  }
+}
+

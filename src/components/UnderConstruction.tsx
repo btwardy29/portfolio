@@ -4,10 +4,10 @@ const SingleProject = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.tape}>
-        <span> UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION </span>
+        <span> UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION </span>
       </div>
       <div className={styles.tape2}>
-        <span> UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION </span>
+        <span> UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION UNDER CONSTRUCTION</span>
       </div>
       <div className={`${styles.imageBg} underConstruction`}>
       </div>

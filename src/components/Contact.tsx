@@ -52,7 +52,7 @@ const Contact = () => {
             <img className={styles.email} src={email} alt="email"/>
           </div>
           <div className={styles.blur}>
-            <p>Made with commitment and passion. All graphics and animations made by me with pure CSS, Adobe Illustrator and w/o other libraries. Spread <span>❤️</span> everywhere.</p>
+            <p>Made  with commitment and passion. All graphics and animations made by me with pure CSS, Adobe Illustrator and w/o other libraries. Spread <span>❤️</span> everywhere.</p>
           </div>
         </div>
       </div>
