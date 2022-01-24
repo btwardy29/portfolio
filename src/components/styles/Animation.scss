@@ -9,6 +9,12 @@
   z-index: -1;
 }
 
+@media screen and (min-width: 1800px) {
+  .container {
+    transform: scale(0.5) translateX(calc(-1700px + 100vw))
+  }
+}
+
 @media screen and (max-width: 900px) {
   .container {
     transform: scale(0.4) translateX(-400px)
